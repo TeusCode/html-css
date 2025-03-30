@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subclasses</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: wheat;
+            border: 1px solid green;
+            display: inline-block;
+        }
+
+        /* o caractere > , indica que p é filho da div, exemplo: pai > filho, dessa forma é indicado que todos os filhos da div que são p, irão receber o estilo dentro das chaves {}. */
+
+        div>p {
+            display: none;
+        }
+
+        div:hover>p {
+            display: block;
+        }
+
+        /* Os dois pontos : , indicam que é uma subclasse, o hover, ele está relacionado ao estado de um elemento, se a div estiver com mouse em cima, ele irá executar as linhas abaixo dentro de suas chaves {}. */
+
+        div:hover {
+            background-color: rgba(246, 229, 197, 0.953);
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Passe o mouse nas divs abaixo!</h1>
+    <div>
+        div 1
+        <p>Texto escondido!</p>
+    </div>
+    <div>
+        div 2
+        <p>Texto escondido 2</p>
+    </div>
+    <div>
+        div 3
+        <p>Texto escondido 3</p>
+    </div>
+
+</body>
+
+</html>

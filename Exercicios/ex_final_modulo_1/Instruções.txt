@@ -1,0 +1,64 @@
+Perfeito! Se os alunos já concluíram o Módulo 1 do curso de HTML e CSS do professor Gustavo Guanabara, podemos criar um exercício que englobe todos os conceitos que eles aprenderam até aqui. O Módulo 1 normalmente abrange os seguintes tópicos:
+
+1. **Estrutura básica de um site em HTML** (com a utilização das tags como `<html>`, `<head>`, `<body>`, `<title>`, etc.)
+2. **Tags de conteúdo**: Como utilizar `<h1>`, `<p>`, `<a>`, `<img>`, etc.
+3. **Listas e tabelas**: Como criar listas ordenadas e não ordenadas com `<ul>`, `<ol>`, `<li>` e tabelas com `<table>`, `<tr>`, `<td>`.
+4. **Links e imagens**: Como usar `<a>` para links e `<img>` para imagens.
+5. **Estruturação de layout simples**: Utilizando o CSS para configurar o estilo básico de uma página, como a definição de cores, fontes e tamanhos.
+6. **Introdução ao CSS**: Como aplicar CSS dentro da tag `<style>` ou via arquivos externos.
+
+Agora, vou sugerir um exercício prático que reúne todos esses tópicos!
+
+---
+
+### **Exercício: Criando uma Página Pessoal**
+
+**Objetivo**: Criar uma página pessoal simples usando HTML e CSS.
+
+#### **Instruções**:
+
+1. **Estrutura HTML**:
+   - Crie a estrutura básica de uma página HTML.
+   - A página deve ter um título com o seu nome e o nome "Minha Página Pessoal".
+   - Dentro da `<body>`, insira um título principal (`<h1>`) com o seu nome e uma descrição (`<p>`) breve sobre você.
+
+2. **Conteúdo e Links**:
+   - Adicione uma lista não ordenada (`<ul>`) com três hobbies seus.
+   - Coloque um link (`<a>`) para seu perfil em uma rede social (pode ser um link de exemplo ou o seu perfil real).
+   - Insira uma imagem sua ou de algo que represente você (utilize a tag `<img>`).
+
+3. **Estilização com CSS**:
+   - Coloque uma cor de fundo para a página.
+   - Defina uma cor para o texto e altere a cor do título `<h1>`.
+   - Use o CSS para ajustar o tamanho da imagem e dar algum estilo à lista de hobbies.
+   - Aplique uma borda ao redor da descrição sobre você.
+
+4. **Layout Responsivo**:
+   - Torne a página responsiva ajustando o tamanho da fonte do título e da descrição com base no tamanho da tela (use media queries).
+   
+5. **Dica de Estilo**:
+   - Tente adicionar um pouco de espaçamento entre os elementos usando `margin` e `padding`.
+   - Use fontes diferentes e adequadas ao tema da página.
+
+---
+
+### **Resultado Esperado**:
+Ao final, a página criada pelos alunos deve exibir de forma clara e organizada:
+- Um título com o nome do aluno.
+- Uma breve descrição sobre o aluno.
+- Uma lista de hobbies.
+- Um link para as redes sociais.
+- Uma imagem pessoal ou ilustrativa.
+- Estilos aplicados de maneira eficiente, com um layout simples e agradável.
+
+---
+
+### **Avaliação**:
+A avaliação pode ser baseada nos seguintes critérios:
+- **Estrutura HTML**: A página deve seguir a estrutura básica corretamente.
+- **Utilização de tags**: As tags de conteúdo (como `<h1>`, `<p>`, `<ul>`, `<a>`, `<img>`, etc.) devem ser usadas corretamente.
+- **Estilos CSS**: O CSS deve ser aplicado para estilizar os elementos de maneira eficaz.
+- **Responsividade**: A página deve se adaptar a diferentes tamanhos de tela.
+- **Organização do Código**: O código HTML e CSS deve ser bem organizado e indentado.
+
+Esse exercício cobre bastante conteúdo aprendido até o Módulo 1 e vai ajudar os alunos a aplicar esses conceitos de forma prática.

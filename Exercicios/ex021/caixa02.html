@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags em HTML 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(199, 197, 197);
+            margin: 0px;
+        }
+
+        header {
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 10px 8px 1px;
+            margin-bottom: 20px
+        }
+
+        header>h1 {
+            text-align: center;
+        }
+
+        nav>a {
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+            background-color: rgb(119, 123, 126);
+            padding: 2px;
+            border-radius: 2px;
+            color: white;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            background-color: rgb(153, 158, 163);
+        }
+
+        nav {
+            background-color: rgb(67, 69, 71);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        main {
+            margin: auto;
+        }
+
+        section {
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 10px 8px 1px;
+            margin-bottom: 20px
+        }
+
+        footer {
+            background-color: rgb(36, 37, 39);
+            color: white;
+            text-align: center;
+            padding: 0.5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<!--No HTML 5, ao invés de divs, utilizamos as tags semânticas, que indicam para o motor de busca a noça intenção com cada tag, e torna o site mais organizado!-->
+
+<body>
+    <header> <!-- Cabeçario -->
+        <h1>Você gosta de Golfinhos?</h1>
+        <nav> <!-- Menu de navegação -->
+            <a href="#">Home</a>
+            <a href="#">Vendas</a>
+            <a href="#">Compras</a>
+            <a href="#">Contato</a>
+            <a href="#">Suporte</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal! -->
+        <section>
+            <article>
+                <h2>Saúde e Golfinhos! </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aspernatur id aperiam, dicta provident
+                    quidem
+                    minus ea consectetur dignissimos fuga. Magnam ab, illo modi placeat quisquam quia esse aliquid
+                    neque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat rem est unde, sit, dolorem
+                    dolores,
+                    optio libero ex deleniti omnis corrupti amet accusantium ducimus laudantium alias nobis at.
+                    Consequatur.</p>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé da página! -->
+        <p>Site criado por Mateus Da Silva Vilaça!
+        </p>
+    </footer>
+</body>
+
+</html>
