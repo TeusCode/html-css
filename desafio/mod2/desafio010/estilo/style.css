@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(../fontes/idroid.otf) format(opentype);
+}
+
+@font-face {
+    font-family: bebasneue;
+    src: url(../fontes/BebasNeue-Regular.ttf);
+}
+
+:root {
+    /* Lembrando (:), indica uma pseudo-classe! */
+
+    /* Variáveis que representam valores */
+
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --cor6: #FFFFFF;
+    --cor7: #0000008e;
+
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'idroid', sans-serif;
+    --fonte-destaque: 'bebasneue', sans-serif;
+}
+
+* {
+    /* Regra global para todos os elementos ! */
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+}
+
+/* Aplicará um emoji after (depois) de uma palavra hiperlink, com a classe externo */
+
+/* (::) significa pseudoelemento */
+
+a.externo::after {
+    content: '\1F517';
+
+}
+
+header {
+    /* Cabeçario */
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    color: var(--cor6);
+    box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.419);
+    min-height: 150px;
+}
+
+header>h1 {
+    font-family: var(--fonte-destaque);
+    padding-top: 15px;
+    color: var(--cor6);
+    text-align: center;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px var(--cor7);
+    margin: 0px;
+}
+
+header>p {
+    padding: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 0px var(--cor7);
+    max-height: 600px;
+    font-size: 1.2em;
+}
+
+nav {
+    /* Menu de Navegação */
+    padding: 15px;
+    text-shadow: 1px 1px 1px var(--cor7);
+}
+
+nav>a {
+    color: var(--cor0);
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    background-color: var(--cor3);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main {
+    /* Conteúdo Principal */
+    background-color: var(--cor6);
+    margin: auto;
+    margin-top: 0px;
+    padding: 15px;
+    max-width: 1000px;
+    min-width: 285px;
+    box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.419);
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    font-size: 1.3em;
+    font-weight: normal;
+    color: var(--cor4);
+    text-indent: 7px;
+}
+
+main p {
+    margin: 15px 0px;
+    font-size: 1em;
+    text-indent: 30px;
+    text-justify: justify;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 3px 4px;
+    font-weight: bold;
+
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+.responsivo {
+    /* Torna imagens adaptativas */
+    width: 100%;
+
+}
+
+.pequena {
+    /* Correção para imagens pequenas */
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+
+aside {
+    /* Conteúdo Extra */
+    background-color: var(--cor0);
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+aside>h3 {
+    background-color: var(--cor3);
+    color: var(--cor6);
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    margin: -15px -15px 0px -15px;
+    font-size: 1em;
+
+}
+
+aside>ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    /* não é compativel com todos navegadores */
+}
+
+aside p {
+    padding: 5px;
+}
+
+footer {
+    /* Rodapé */
+    font-weight: normal;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+footer :hover {
+    text-decoration: underline;
+    color: var(var(--cor1));
+}
+
+div.video {
+    /* Caixa para configuração do video */
+    background-color: var(--cor4);
+    padding: 20px;
+    margin: 0px -15px 30px -15px;
+    position: relative;
+    padding-bottom: 58.5%;
+}
+
+div.video>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
