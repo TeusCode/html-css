@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagens de fundos </title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        /* Configurações padrões para todas as divs quadrado */
+        div.quadrado {
+            display: inline-block;
+            border-radius: 10px;
+            border: 3px solid green;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+
+        div#d1 {
+            /* Adicionando fundo com cor solida: */
+            background-color: rgb(248, 107, 107);
+            border: 3px solid rgb(248, 107, 107);
+        }
+
+        div#d2 {
+            /* Adicionando fundo com degradê de cores */
+            background-image: linear-gradient(to right, rgb(248, 107, 107), rgb(255, 0, 0));
+            border: 3px solid rgb(248, 107, 107);
+        }
+
+        div#d3 {
+            /* Adicionando fundo com imagem */
+            background-image: url(imagens/pattern001.png);
+            border: 3px solid black;
+        }
+
+        /* Configurando de forma individual */
+    </style>
+</head>
+
+<body>
+
+    <abbr title="fundo com cor solida">
+        <div class="quadrado" id="d1">
+        </div>
+    </abbr>
+
+    <abbr title="fundo com degradê de cores">
+        <div class="quadrado" id="d2">
+        </div>
+    </abbr>
+
+    <abbr title="fundo com imagem">
+        <div class="quadrado" id="d3">
+        </div>
+    </abbr>
+
+</body>
+
+</html>
