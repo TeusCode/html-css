@@ -37,6 +37,13 @@
         td.num {
             text-align: right;
         }
+
+        /* Efeito zebrado na tabela, usa-se a pseudo classe nth-child((ímpar = odd(2n-1)),(par = even(2n))
+        Ela aplica o efeito somente nos filhos que são pares, ou impares, ou no caso deo 2n, pula linhas, se você colocar 5n a cada cinco linhas ela aplica o efeito*/
+
+        tbody>tr:nth-child(odd) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 
