@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulário!</h1>
-    <p>Nome:</p> <input type="text" name="Nome" id="Nome">
-   <p>Sobrenome:</p> <input type="text" name="Sobrenome" id="Sobrenome"> <br>
-   <br>
-   <input type="submit" value="Enviar !">
-</body>
+    <form action="cadastro.js" autocomplete="off">
+        <p><label for="inome">
+            Nome:
+            </label></p>
+         <input type="text" name="nome" id="inome">
+           <p><label for="isobrenome">
+        Sobrenome:
+        </label></p>
+        <input type="text" name="sobrenome" id="isobrenome"> <br>
+           <br>
+           <input type="submit" value="Enviar !">
+        </body>
+    </form>
 </html>
