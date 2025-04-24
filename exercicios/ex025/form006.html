@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+<form action="cadastro.js" autocomplete="on" method="post">
+    <div>
+        <label for="icolor"> </label>Selecione a cor: <input type="color" name="color" id="icolor" value="#00ff00)">
+    </div>
+
+    <div>
+        <label for="inivel">Nível de satisfação: <input type="range" min="0" max="5" value="4"></label>
+    </div>
+    
+    <div> 
+        <!-- Obrigatório o uso de (method="post"), por ser um arquivo maior que 3KB -->
+         
+        <label for="ifoto">Foto de perfil: <input type="file" name="foto" id="ifoto"></label>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</form>
+</body>
+</html>
