@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Descubra quantos anos você tem:</h2>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="iano">Ano: </label>
+            <input type="number" id="iano" name="ano"
+            oninput="calcIdade()">
+        </p>
+        <p> <label for="resultado">Sua idade é:</label>
+            <output id="resultado">0</output>
+        </p>
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            resultado.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
