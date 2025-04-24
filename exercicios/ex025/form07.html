@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <div>
+            <label for="iestado"></label>
+
+<!-- Adicionando lista de seleção -->
+
+            <select name="estado" id="iestado">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="Sp">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande d Norte</option>
+                </optgroup>
+
+            </select>
+            
+        </div>
+            <!-- Adicionando lista de seleção com opção de escrever -->
+
+        <div>
+            <label for="iprofissao">Profissão: </label>
+            <input type="text" name="profissao" id="iprofissao" list="lstprofissao">
+            <datalist id="lstprofissao">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </div>
+
+            <!-- Adicionando campo de texto! -->
+            
+        <div>
+            <label for="imensagem"></label>
+            <textarea name="mensagem" id="imensagem" col="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
