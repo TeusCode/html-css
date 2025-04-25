@@ -3,5 +3,8 @@
 /* Configurações no modo retrato */
 
 body{
-;
+background-image: url(../imagens/cev-portrait.jpg);
+background-position: bottom center;
+background-size: contain;
+background-repeat: no-repeat;
 }
