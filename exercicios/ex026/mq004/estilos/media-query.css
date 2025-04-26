@@ -14,6 +14,24 @@ Grandes telas: acima de 1200px
 */
 
 @media print { /* Versão para impressão */
+Body{
+    background-image:none;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main::after{
+    content: 'Esse documento foi escrito por Mateus da Silva Vilaça';
+}
+
+img#phone{ display:none;}
+img#pc{ display:none;}
+img#tablet{display:none;}
+img#impressora{display:inline;}
+img#tv{display:none;}
 
 }
 
@@ -25,6 +43,13 @@ Grandes telas: acima de 1200px
     main{
         width: 450px;
     }
+
+    img#phone{ display:none;}
+    img#pc{ display:none;}
+    img#tablet{display:inline;}
+    img#impressora{display:none;}
+    img#tv{display:none;}
+
 }
 
 @media screen and (min-width:992px) and (max-width:1220px){ /*Versão para Desktop */
@@ -35,6 +60,13 @@ Grandes telas: acima de 1200px
     main{
         width: 500px;
     }
+
+    img#phone{ display:none;}
+    img#pc{ display:inline;}
+    img#tablet{display:none;}
+    img#impressora{display:none;}
+    img#tv{display:none;}
+
 }
 
 @media screen and (min-width:1200px) { /*Versão para grandes telas */
@@ -45,4 +77,11 @@ Grandes telas: acima de 1200px
     main{
         width: 600px;
     }
+
+    img#phone{ display:none;}
+    img#pc{ display:none;}
+    img#tablet{display:none;}
+    img#impressora{display:none;}
+    img#tv{display:inline;}
+
 }
