@@ -22,6 +22,9 @@ Grandes telas: acima de 1200px
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
+    main{
+        width: 450px;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1220px){ /*Versão para Desktop */
@@ -29,11 +32,17 @@ Grandes telas: acima de 1200px
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
+    main{
+        width: 500px;
+    }
 }
 
 @media screen and (min-width:1200px) { /*Versão para grandes telas */
 
     body{
         background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 600px;
     }
 }
