@@ -1,4 +1,88 @@
 @charset "UTF-8";
 
-body,html{
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(227, 225, 225);
+}
+
+header {
+    background-color: gray;
+    padding-bottom: 10px;
+}
+
+#menu {
+    background-color: rgb(61, 61, 61);
+    display: block;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#menu:hover {
+    background-color: rgb(93, 91, 91);
+    color: black;
+}
+
+menu {
+    display: block;
+}
+
+header>h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header ul {
+    background-color: rgb(88, 87, 87);
+}
+
+header ul li {
+    display: block;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid gray;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: rgb(180, 178, 178);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    width: 70%;
+    background-color: white;
+    padding: 25px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.381);
+}
+
+main h2 {
+    padding-bottom: 20px;
+}
+
+main p {
+    line-height: 1.8em;
+    text-align: justify;
+    text-indent: 20px;
+    padding-bottom: 20px;
 }
