@@ -34,7 +34,7 @@ header {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 header>h1 {
