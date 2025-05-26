@@ -1,0 +1,37 @@
+/*
+
+Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+@media screen and (min-width:768px) {
+    #menu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu ul li {
+        display: inline;
+        padding: 4px;
+        background-color: rgb(37, 36, 36);
+        border: none;
+        border-radius: 5px;
+    }
+
+    menu#list {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.381);
+    }
+
+    main {
+        width: 600px;
+    }
+}
