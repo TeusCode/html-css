@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Exercicio Flex-Box</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        #container {
+            background-color: white;
+            border-radius: 10px;
+
+            display: flex;
+            /*Transforma a div em um recipiente para armazenar os itens (como um recipiente que armazena agua)*/
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            border-radius: 9px;
+            color: white;
+            text-align: center;
+
+            flex: auto;
+            /*Transforma os itens em um liquido como a agua que toma o formato do recipiente (como a gua dentro de uma garrafa)*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+
+</html>
