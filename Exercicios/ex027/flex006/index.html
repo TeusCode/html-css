@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Justify e align</title>
+    <style>
+        body {
+            background-color: purple;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+            height: 200px;
+            width: 400px;
+
+
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Adicione as propriedades pedidas abaixo */
+        }
+
+        .item {
+            background-color: dodgerblue;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="avatar" class="item">1</div>
+        <div class="item">Nome</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+
+</html>
