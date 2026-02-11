@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner1 {
+            display: flex;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        div.conteiner2 {
+            display: flex;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.conteiner3 {
+            display: flex;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        div.conteiner4 {
+            display: flex;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            justify-content: flex-start;
+        }
+
+
+        div.conteiner5 {
+            display: flex;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            justify-content: flex-end;
+        }
+
+        div.conteiner6 {
+            display: flex;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            justify-content: center;
+        }
+
+        div.item {
+            border-radius: 10px;
+            height: 80px;
+            width: 80px;
+            background-color: blue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-left: 2px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Justify - Content: <mark>space-evenly</mark> espaçamento igual</h1>
+    <div class="conteiner1">
+        <div class="item">EXEMPLO A</div>
+        <div class="item">EXEMPLO B</div>
+        <div class="item">EXEMPLO C</div>
+        <div class="item">EXEMPLO D</div>
+        <div class="item">EXEMPLO E</div>
+    </div>
+    <h1>Justify - Content: <mark>space-around</mark> bordas menores 1/2</h1>
+    <div class="conteiner2">
+        <div class="item">EXEMPLO A</div>
+        <div class="item">EXEMPLO B</div>
+        <div class="item">EXEMPLO C</div>
+        <div class="item">EXEMPLO D</div>
+        <div class="item">EXEMPLO E</div>
+    </div>
+    <h1>Justify - Content: <mark>space-between</mark> gruda nas paredes, e distribui igualmente os itens do centro</h1>
+    <div class="conteiner3">
+        <div class="item">EXEMPLO A</div>
+        <div class="item">EXEMPLO B</div>
+        <div class="item">EXEMPLO C</div>
+        <div class="item">EXEMPLO D</div>
+        <div class="item">EXEMPLO E</div>
+    </div>
+
+    <h1>Justify - <mark>Flex-Start</mark>, valor padrão gruda os elementos no main-start</h1>
+    <div class="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <h1>Justify - <mark>Flex-End</mark>, valor padrão gruda os elementos no main-end</h1>
+    <div class="conteiner5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <h1>Justify - <mark>center</mark>, alinha os itens no centro do container</h1>
+    <div class="conteiner6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+
+</body>
+
+</html>
