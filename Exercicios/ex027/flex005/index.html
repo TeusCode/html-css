@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner1 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-flow: row wrap;
+            align-items: stretch;
+        }
+
+        div.conteiner2 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        div.conteiner3 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+        }
+
+        div.conteiner4 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+            align-items: center;
+        }
+
+
+        div.conteiner5 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20p
+        }
+
+        div.conteiner6 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 2
+        }
+
+        div.item {
+            border-radius: 10px;
+            width: 80px;
+            background-color: blue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-left: 2px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>align-items: <mark>strech</mark> Itens esticam no eixo cross-axis (padrão)</h1>
+    <div class="conteiner1">
+        <div class="item">EXEMPLO A</div>
+        <div class="item">EXEMPLO B</div>
+        <div class="item">EXEMPLO C</div>
+        <div class="item">EXEMPLO D</div>
+        <div class="item">EXEMPLO E</div>
+    </div>
+    <h1>align-items: <mark>flex-start</mark> Itens grudam no cross-start</h1>
+    <div class="conteiner2">
+        <div class="item">EXEMPLO A</div>
+        <div class="item">EXEMPLO B</div>
+        <div class="item">EXEMPLO C</div>
+        <div class="item">EXEMPLO D</div>
+        <div class="item">EXEMPLO E</div>
+    </div>
+    <h1>align-items: <mark>flex-end</mark> gruda os itens no cross-end</h1>
+    <div class="conteiner3">
+        <div class="item">EXEMPLO A</div>
+        <div class="item">EXEMPLO B</div>
+        <div class="item">EXEMPLO C</div>
+        <div class="item">EXEMPLO D</div>
+        <div class="item">EXEMPLO E</div>
+    </div>
+
+    <h1>align-items: <mark>center</mark> posiciona os itens no centro do cross-axis</h1>
+    <div class="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <h1>Justify - <mark>Flex-End</mark>, valor padrão gruda os elementos no main-end</h1>
+    <div class="conteiner5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <h1>Justify - <mark>center</mark>, alinha os itens no centro do container</h1>
+    <div class="conteiner6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+
+</body>
+
+</html>
