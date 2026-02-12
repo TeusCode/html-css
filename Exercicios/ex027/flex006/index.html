@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner1 {
+            display: flex;
+            background-color: white;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+
+
+            flex-flow: row wrap;
+            align-items: stretch;
+        }
+
+        div.item {
+            border-radius: 10px;
+            width: 80px;
+            background-color: blue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-left: 2px;
+        }
+
+        div#ia {
+            order: -1;
+            background-color: green;
+        }
+
+        div#ib {
+            order: -2;
+            background-color: red;
+        }
+
+        div#ic {
+            order: -1;
+            background-color: crimson;
+        }
+
+        div#id {
+            order: 2;
+            background-color: orange;
+        }
+
+        div#ie {
+            order: -6;
+            background-color: orangered;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ordem dos itens: <mark>order:</mark>
+    </h1>
+    <div class="conteiner1">
+        <div class="item" id="ia">EXEMPLO A</div>
+        <div class="item" id="ib">EXEMPLO B</div>
+        <div class="item" id="ic">EXEMPLO C</div>
+        <div class="item" id="id">EXEMPLO D</div>
+        <div class="item" id="ie">EXEMPLO E</div>
+    </div>
+</body>
+
+</html>
