@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner1 {
+            display: flex;
+            background-color: white;
+            height: 400px;
+            padding: 10px;
+            border-radius: 20px;
+
+
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        div.item {
+            border-radius: 5px;
+            background-color: blue;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-left: 2px;
+            flex-basis: 200px;
+            ;
+        }
+
+        div.item:hover {
+            background-color: rgb(2, 2, 138);
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-basis: <mark>200px</mark></h1>
+    <!--Como o align-items e o align-content , os alinhamentos do align-self acontecem no eixo cross (transversal)-->
+    <div class="conteiner1">
+        <div class="item" id="i1">Auto</div>
+        <div class="item" id="i2">flex-start</div>
+        <div class="item" id="i3">flex-end</div>
+        <div class="item" id="i4">center</div>
+        <div class="item" id="i5">stretch</div>
+    </div>
+    <!--Coloquei espaços só para o item fica maior-->
+</body>
+
+</html>
