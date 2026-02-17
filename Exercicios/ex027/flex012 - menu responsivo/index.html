@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu responsivo
+    </title>
+    <style>
+        @charset "UTF-8";
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(197, 196, 196);
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        header {
+            background-color: gray;
+            padding: 10px;
+            color: white;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header>h1 {
+            border: 1px dotted red;
+
+            flex: 0 0 200px;
+            /*Travando o elemento, dimensões*/
+        }
+
+        header>nav {
+            border: 1px dotted red;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+        }
+
+        header>nav>a {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        header>nav>a:hover {
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s;
+        }
+
+        main {
+            background-color: white;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.582);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        main>h2 {}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de Flex Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo officiis dicta deserunt aperiam,
+            consequatur excepturi dolorum incidunt! Totam, laudantium? Itaque est soluta unde ad inventore ex, cum
+            autem earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate autem nihil iure ipsum
+            fugiat non? Veniam numquam recusandae exercitationem iste ad sint esse impedit quo maxime. Voluptate
+            labore alias aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque alias laboriosam odit modi, numquam
+            ad commodi! Porro quasi impedit laboriosam repellat voluptate culpa? Odit fugit architecto omnis asperiores
+            consequuntur?</p>
+    </main>
+</body>
+
+</html>
