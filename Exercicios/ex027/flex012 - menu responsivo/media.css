@@ -1,0 +1,16 @@
+@media (max-width: 580px) {
+
+    header,
+    header>nav {
+        flex-flow: column nowrap;
+    }
+
+    header>h1 {
+        flex-basis: 40px
+    }
+
+    header>nav>a {
+        width: 90vw;
+        text-align: center;
+    }
+}
