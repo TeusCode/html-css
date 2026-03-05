@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Grid</title>
+    <style>
+        .containerH {
+            background-color: gray;
+
+            display: grid;
+            grid-template: repeat(5, 100px)/repeat(9, 1fr)
+        }
+
+        .item1H {
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .item2H {
+            background-color: green;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+
+        .item3H {
+            background-color: blue;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 7;
+            grid-column-end: 10;
+        }
+
+        .item4H {
+            background-color: yellow;
+            grid-row-start: 2;
+            grid-row-end: 10;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .item5H {
+            background-color: purple;
+            grid-row-start: 2;
+            grid-row-end: 10;
+            grid-column-start: 5;
+            grid-column-end: 10;
+        }
+
+        .item6H {
+            background-color: aqua;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 6;
+            grid-column-end: 9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerH">
+        <div class="item1H">Caixa1</div>
+        <div class="item2H">Caixa2</div>
+        <div class="item3H">Caixa3</div>
+        <div class="item4H">Caixa4</div>
+        <div class="item5H">Caixa5</div>
+        <div class="item6H">Caixa6</div>
+    </div>
+</body>
+
+</html>

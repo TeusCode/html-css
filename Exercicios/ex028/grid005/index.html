@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Grid</title>
+    <style>
+        .container {
+            background-color: gray;
+            padding: 5px;
+
+            display: grid;
+            grid-template: repeat(3, 100px)/repeat(4, 1fr);
+            gap: 10px
+        }
+
+        .caixa1 {
+            background-color: brown;
+            border-radius: 10px;
+            padding: 5px;
+            border: 4px solid rgb(97, 25, 25);
+
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .caixa2 {
+            background-color: darkgreen;
+            border-radius: 10px;
+            padding: 5px;
+            border: 4px solid rgb(0, 51, 0);
+
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .caixa3 {
+            background-color: darkgoldenrod;
+            border-radius: 10px;
+            padding: 5px;
+            border: 4px solid rgb(100, 74, 7);
+
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="caixa1">Caixa 01</div>
+        <div class="caixa2">Caixa 02</div>
+        <div class="caixa3">Caixa 03</div>
+    </div>
+</body>
+
+</html>
