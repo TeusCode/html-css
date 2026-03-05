@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #config {
+            background-color: #2d2e2e;
+            color: whitesmoke;
+            width: 100%;
+            text-align: center;
+            font-size: 0.7em;
+            border: 1px solid #141414;
+
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            justify-content: start;
+            gap: 10px;
+        }
+
+        .itensConfig {
+            padding: 3px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .itensConfig:hover {
+            background-color: #1f2020;
+            cursor: pointer;
+        }
+
+        #repository {
+            background-color: #1f2020;
+            font-size: 0.7em;
+            height: 35px;
+
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: start;
+            justify-items: start;
+            border: 1px solid #141414;
+
+        }
+
+        .itensRepository {
+            color: white;
+            padding: 3px;
+            padding-right: 30px;
+            border-right: 1px solid #141414;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .itensRepository:hover {
+            background-color: #3c3c3c;
+            cursor: pointer;
+        }
+
+        #endereco {
+            background-color: #2d2e2e;
+            font-size: 0.7em;
+            color: white;
+            height: 25px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 8fr
+        }
+
+        .itensEndereco {
+            padding: 3px;
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        main {
+            background-color: #2d2e2e;
+            height: 600px;
+
+            display: grid;
+            grid-template: 2fr 1fr / 1fr 4fr;
+        }
+
+        .itensMain {
+            border: 1px dotted white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="config">
+        <div class="itensConfig">File</div>
+        <div class="itensConfig">Edit</div>
+        <div class="itensConfig">View</div>
+        <div class="itensConfig">Repository</div>
+        <div class="itensConfig">Branch</div>
+        <div class="itensConfig">Help</div>
+    </div>
+
+    <div id="repository">
+        <div class="itensRepository">Current repository</div>
+        <div class="itensRepository">Current Branch</div>
+        <div class="itensRepository">Fetch origin</div>
+    </div>
+
+    <div id="endereco">
+        <div class="itensEndereco">Changes</div>
+        <div class="itensEndereco">History</div>
+        <div class="itensEndereco">Endereço</div>
+    </div>
+
+    <main>
+        <div class="itensMain" id="commit">Commit</div>
+        <div class="itensMain" id="mod">Modificações</div>
+        <div class="itensMain">COMITAR</div>
+    </main>
+</body>
+
+</html>
