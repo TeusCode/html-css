@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Grid</title>
+    <style>
+        .containerH {
+            background-color: gray;
+
+            display: grid;
+            grid-template: repeat(5, 100px)/repeat(9, 1fr)
+        }
+
+        .item1H {
+            background-color: red;
+
+           grid-area:1/1/2/5;}
+
+        .item2H {
+            background-color: green;
+
+            grid-area:1/5/2/7;
+        }
+
+        .item3H {
+            background-color: blue;
+
+            grid-area:1/7/2/-1;
+        }
+
+        .item4H {
+            background-color: yellow;
+
+            grid-area:2/1/-1/5;
+        }
+
+        .item5H {
+            background-color: purple;
+
+            grid-area:2/5/-1/-1;
+        }
+
+        .item6H {
+            background-color: aqua;
+
+            grid-area:3/6/5/9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerH">
+        <div class="item1H">Caixa1</div>
+        <div class="item2H">Caixa2</div>
+        <div class="item3H">Caixa3</div>
+        <div class="item4H">Caixa4</div>
+        <div class="item5H">Caixa5</div>
+        <div class="item6H">Caixa6</div>
+    </div>
+</body>
+
+</html>
